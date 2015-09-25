@@ -43,7 +43,7 @@ def latestItems():
     """Lists the items which were recently created in descending order (newest item first)."""
     categories = session.query(Category).all()
     items = session.query(Item).order_by(desc(Item.creation_date)).limit(10).all()
-    return render_template('latest_items.html', categories=categories, items=items)
+    return render_template('index.html', categories=categories, items=items)
 
 @app.route('/category/<int:category_id>/items/')
 def listItems(category_id):
