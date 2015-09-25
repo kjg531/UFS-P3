@@ -5,3 +5,9 @@ table.table tr td div.action-group {
 table.table tr:hover td div.action-group {
     display:inline-block;
 }
+
+.swing {
+	-webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+    /*-webkit-animation-iteration-count: infinite; */
+}
